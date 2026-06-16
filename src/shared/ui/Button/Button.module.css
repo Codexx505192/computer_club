@@ -1,0 +1,22 @@
+.btn_rsp{
+  width: 130px;
+  height: 40px;
+  cursor: pointer;
+  transition: 0.8s ease;
+  border-radius: 5px;
+  border: none;
+  background-color: gray;
+  color: wheat;
+  font-weight: 700;
+}
+
+
+.btn_rsp{
+    opacity: 30px;
+}
+
+
+
+.btn_rsp.activ{
+    background-color: rgb(129, 79, 79);
+}
