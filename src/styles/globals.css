@@ -1096,7 +1096,6 @@ color: #000000;
 
 .footer_block{
   background-color: #161616;
-  padding: 40px 0;
 }
 
 
@@ -1110,6 +1109,7 @@ footer{
   display: flex;
   align-items: center;
   gap: 132px;
+  padding:  20px 0;
 }
 
 .footer_left{

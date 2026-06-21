@@ -417,7 +417,7 @@ function handlClick(type){
                         <div className="pc_icon">
                           <img src="./img/PC.png" alt="" />
                         </div>
-                           <Link href="#" className="lnk5">
+                           <Link href="/Par" className="lnk5">
                            забронировать ПК
                            </Link>
                       </button>
