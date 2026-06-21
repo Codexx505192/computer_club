@@ -7,7 +7,6 @@ export default function Header(){
 const [openMenu, setOpenMenu] = useState(false)
  
 
-
     return(
          <header>
           <div className="header_logo">
@@ -15,17 +14,28 @@ const [openMenu, setOpenMenu] = useState(false)
             </div>  
 
             <ul className="ul">
+               <Link href="/AboutUs" className="lnk">
                <WayToTeach title={ways[0].title}/>
+               </Link>
+
+              <Link href="#" className="lnk">
                <WayToTeach {...ways[1]}/>
+              </Link> 
+
+               <Link href="#" className="lnk">
                <WayToTeach {...ways[2]}/>
+               </Link>
+               
+               <Link href="#" className="lnk">
                <WayToTeach {...ways[3]}/>
+               </Link>
             </ul>   
 
             <div className="header_right">
                <div className="header_menu">
                 <ul className={`header_list ${openMenu ? "active" : ""}`}>
                     <li>
-                        <Link href="#" className="lnk2">
+                        <Link href="/AboutUs" className="lnk2">
                         О нас
                         </Link>
                     </li>
