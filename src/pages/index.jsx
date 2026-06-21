@@ -1,17 +1,21 @@
+import { diffrences } from "@/data";
 import Button from "@/shared/ui/Button";
+import Footer from "@/shared/ui/Footer";
 import Header from "@/shared/ui/Header";
 import Head from "next/head";
 import Link from "next/link";
 import { useState } from "react";
 
+
+
 export default function Home() {
 const [content, setContent] = useState("нажми на кнопку")
-
 
 console.log("App component Render")
 
 function handlClick(type){
   console.log("button clicked", type);
+  setContent(type)
 }
 
   return (
@@ -24,7 +28,7 @@ function handlClick(type){
       </Head>
       <div>
         <main>
-          <section>
+          <section className="phti">
             <div className="container">
              <Header/>
 
@@ -39,7 +43,7 @@ function handlClick(type){
             </div>
           </section>
 
-           <section>
+           <section className="phti">
             <div className="container">
               <div className="game_bnr">
               <div className="bnr_top">
@@ -98,7 +102,7 @@ function handlClick(type){
             </div>
             </section> 
 
-            <section>
+            <section className="phti">
               <div className="container">
                 <div className="establishments_block">
                    <p className="txt3">
@@ -153,7 +157,7 @@ function handlClick(type){
               </div>
             </section>
 
-            <section>
+            <section className="phti">
               <div className="container">
                 <div className="playstation_block">
                  <div className="playstation_itm">
@@ -177,7 +181,7 @@ function handlClick(type){
               </div>
             </section>
 
-            <section>
+            <section className="phti">
               <div className="container">
                 <div className="photo_block">
                  <div className="photo_top">
@@ -220,21 +224,23 @@ function handlClick(type){
               </div>
             </section>
 
-            <section>
+            <section className="bp">
               <div className="container">
                 <div className="btn_block">
+                  <div className="btn_top">
                   <Button onClick={() => handlClick("way")}>Подход</Button>
                   <Button onClick={() => handlClick("easy")}>Доступность</Button>
                   <Button onClick={() => handlClick("programm")}>Концентрация</Button>
+                  </div>
 
                   <div>
-                    {/* <p>{content}</p> */}
+                    <p className="txt20">{diffrences[content]}</p>
                   </div>
                 </div>
               </div>
             </section>
 
-            <section>
+            <section className="phti">
               <div className="container">
                 <div className="gasu_blockk">
                   <div className="gasu_top">
@@ -275,7 +281,7 @@ function handlClick(type){
               </div>
             </section>
 
-            <section>
+            <section className="phti">
               <div className="container">
                 <div className="gs_b">
                    <div className="gs_grid">
@@ -326,6 +332,194 @@ function handlClick(type){
                     </div>
                    </div>
 
+                </div>
+              </div>
+            </section>
+
+            <section className="xn">
+              <div className="container">
+                <div className="game_zona_block">
+                      <div className="game_banner">
+                         <div className="game_lm">
+                         <div>
+                           <p className="txt15">Зона</p>
+
+                          <p className="txt16">
+                            standart
+                          </p>
+                         </div>
+
+                          <div className="game_grid">
+                            <div className="gm_tm">
+                              <p className="txt17">
+                                24 ПК с мощным железом
+                              </p>
+
+                              <div className="gm_r">
+                                <img src="./img/gm_r2.png" alt="" />
+                              </div>
+                            </div>
+
+                              <div className="gm_tm">
+                              <p className="txt17">
+                                27” Мониторы  <br />
+                                с частотой 144 гц
+                              </p>
+
+                              <div className="gm_r">
+                                <img src="./img/gm_3.png" alt="" />
+                              </div>
+                            </div>
+
+                              <div className="gm_tm">
+                              <p className="txt17">
+                               Механические <br />
+                                клавиатуры на Blue свитчах
+                              </p>
+
+                              <div className="gm_r_2">
+                                <img src="./img/cl.png" alt="" />
+                              </div>
+                            </div>
+                          </div>
+                         </div>
+                      </div>
+                   
+
+                </div>
+              </div>
+            </section>
+
+            <section className="prr">
+              <div className="container">
+                <div className="prm_blck">
+                   <div className="premium_br">
+                    <div className="prm_left">
+                      <div className="prm_top">
+                       <div className="cocktail_icn">
+                        <img src="./img/cocktail.png" alt="" />
+                       </div>
+
+                        <p className="txt18">
+                          premium бар
+                        </p>
+                      </div>
+
+                      <p className="txt19">
+                        Наше заведение подарит каждому гостю приятную атмосферу и <br />
+                        гастрономическое удовольствие. Здесь вы найдёте все для отдыха: аппетитный <br />
+                        выбор пиццы, салатов, пасты, десертов и других блюд никого не оставит <br />
+                        равнодушным. Широкий ассортимент напитков не только утолит жажду, но и <br />
+                        оставит свежее послевкусие, за которым захочется вернуться ещё раз
+                      </p>
+
+                      <button className="btn3">
+                        <div className="pc_icon">
+                          <img src="./img/PC.png" alt="" />
+                        </div>
+                           <Link href="#" className="lnk5">
+                           забронировать ПК
+                           </Link>
+                      </button>
+                    </div>
+
+                    <div className="prm_ri">
+                      <img src="./img/lfttt.png" alt="" />
+                    </div>
+                   </div>
+                </div>
+              </div>
+            </section>
+
+            <section className="vntb">
+              <div className="container">
+                <div className="events_block">
+                  <div className="evnt_lm">
+                    <div className="vnt_left">
+                      <p className="txt21">
+                        наши события
+                      </p>
+
+                      <p className="txt22">Погрузись с нами в киберспортивный мир!</p>
+
+                      <button className="btn4">
+                        <div className="clndr">
+                          <img src="./img/calendar.png" alt="" />
+                        </div>
+                         
+                        <Link href="#" className="lnk6">
+                        Все события
+                        </Link>
+                      </button>
+                    </div>
+
+                    
+                    <div className="card_lft">
+
+                                                <div className="card">
+  {/* <!-- Сама картинка --> */}
+  <img src="./img/usr.png" alt="Background" className="card__img"/>
+  
+  {/* <!-- Тёмный оверлей для читаемости текста --> */}
+  <div className="card__overlay"></div>
+  
+  {/* <!-- Контент карточки --> */}
+  <div className="card__content">
+    <div className="card__badge">6 мая</div>
+    
+    <div className="card__bottom">
+      <div className="card__text">
+        <h3 className="card__title">«COME BACK» компьютерных салонов</h3>
+        <p className="card__description">Управляющий “GOSU” выступил экспертом в Московской газете</p>
+      </div>
+      <button className="card__btn">
+       <Link href="#">
+        <img src="./img/arrw_r.png" alt="" />
+       </Link>
+      </button>
+    </div>
+  </div>
+</div>
+                   
+                             <div className="card">
+  {/* <!-- Сама картинка --> */}
+  <img src="./img/zack.png" alt="Background" className="card__img"/>
+  
+  {/* <!-- Тёмный оверлей для читаемости текста --> */}
+  <div className="card__overlay"></div>
+  
+  {/* <!-- Контент карточки --> */}
+  <div className="card__content">
+    <div className="card__badge">4 мая</div>
+    
+    <div className="card__bottom">
+      <div className="card__text">
+        <h3 className="card__title">Кино в GOSU</h3>
+        <p className="card__description">
+          Уже совсем скоро в нашем клубе <br />
+          пройдет премьера нового Бэтмана
+        </p>
+      </div>
+      <button className="card__btn">
+       <Link href="#">
+        <img src="./img/arrw_r.png" alt="" />
+       </Link>
+      </button>
+    </div>
+  </div>
+</div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </section>
+
+            <section className="s_ftr">
+              <div className="container">
+                <div className="footer_block">
+                 
+               <Footer/>
                 </div>
               </div>
             </section>
