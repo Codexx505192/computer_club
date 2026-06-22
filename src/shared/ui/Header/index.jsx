@@ -65,9 +65,9 @@ const [openMenu, setOpenMenu] = useState(false)
 
                </div>
 
-                <p className="txt">
+                <Link href="/Menu" className="txt">
                     Меню
-                </p>
+                </Link>
             </div> 
 
             
