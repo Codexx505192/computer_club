@@ -117,7 +117,7 @@ export default function Page(){
                        <div className={styles.hk_top}>
                         <p className={styles.txt_abot7}>
                           Bar & Hookah
-                        </p>
+                      </p>
 
                         <p className={styles.txt_abot8}>
                           ламповая атмосфера <br />

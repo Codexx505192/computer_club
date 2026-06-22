@@ -1,6 +1,4 @@
 .about_block{
-    /* background-color: blue; */
-
     background-image: url("/about/bac.png");
     background-repeat: no-repeat;
     background-size: cover;
@@ -122,7 +120,7 @@ color: #FFFFFF;
 
 
 .favor_game_block{
-    background-color: coral;
+    background-color: #100f10;
     position: relative;
 }
 
@@ -164,6 +162,13 @@ font-style: Regular;
 font-size: 128px;
 text-align: center;
 color: #FFFFFF;
+
+transition: 0.9s ease;
+}
+
+.txt_abot4:hover{
+    text-shadow: 3px 2px 3px greenyellow;
+    transform: scale(1.1);
 }
 
 .baar_hookah_block{
@@ -185,7 +190,15 @@ font-size: 24px;
 text-align: center;
 text-transform: uppercase;
 color: #6EFF24;
+
+transition: 0.9s ease;
 }
+
+.txt_abot5:hover{
+color: #91f55f;
+text-shadow: 2px 3px 1px rgb(193, 236, 129);
+}
+
 
 .txt_abot6{
 font-weight: 400;
@@ -195,7 +208,15 @@ text-align: center;
 color: #FFFFFF;
 
 font-family: "Inter", sans-serif;
+transition: 0.9s ease;
 }
+
+.txt_abot6:hover{
+transform: scale(1.1);
+text-shadow: 4px 2px 2px greenyellow;
+}
+
+
 
 .hh{
     background-color: #100f10;
@@ -222,7 +243,7 @@ font-family: "Inter", sans-serif;
 }
 
 .ab_2{
-        background-color: #100f10;
+    background-color: #100f10;
 }
 
 .hk_top{
@@ -250,6 +271,12 @@ font-style: Bold;
 font-size: 64px;
 text-transform: uppercase;
 color: #FFFFFF;
+
+transition: 0.8s ease;
+}
+
+.txt_abot8:hover{
+    text-shadow: 3px 2px 0 greenyellow;
 }
 
 
