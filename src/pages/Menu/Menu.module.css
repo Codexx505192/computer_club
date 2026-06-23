@@ -188,6 +188,121 @@ color: #FFFFFF;
     background-color: rgba(0, 0, 0, 0.28);
 }
 
+
+.ul_3{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    gap: 20px;
+
+    background-image: url("/menu_s/frt_tea.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.28);
+}
+
+.ul_4{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    gap: 20px;
+
+    background-image: url("/menu_s/lemonade.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.28);
+    padding: 50px 0;
+}
+
+
+.ul_5{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    gap: 20px;
+
+    background-image: url("/menu_s/milkshake.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 50px 0;
+    background: rgba(0, 0, 0, 0.091);
+}
+
+.ul_6{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    gap: 20px;
+
+    background-image: url("/menu_s/pizza.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 50px 0;
+}
+
+.ul_7{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    gap: 20px;
+
+    background-image: url("/menu_s/sandwich.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 50px 0;
+}
+
+.ul_8{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    gap: 20px;
+
+    background-image: url("/menu_s/food.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 50px 0;
+}
+
+.ul_9{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    gap: 20px;
+
+    background-image: url("/menu_s/swe.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 50px 0;
+}
+
+.spp{
+    font-family: Poppins;
+font-weight: 400;
+font-style: Regular;
+font-size: 40px;
+text-transform: uppercase;
+color: #3FE23F;
+}
+
+.spp2{
+    font-family: Poppins;
+font-weight: 400;
+font-style: Regular;
+font-size: 40px;
+text-transform: uppercase;
+color: #D150FF;
+}
+
+
+.rr{
+    display: flex;
+    align-items: center;
+    gap: 27px;
+}
+
+
+
 .ppp{
     display: flex;
     align-items: center;
@@ -265,6 +380,16 @@ color: #FFFFFF;
     top: 271px;
     left: 40px;
 }
+
+
+.txt_2 {
+    padding: 0 0 40px;
+    font-size: 50px;
+}
+
+.txt_4 {
+    font-size: 29px;
+}
 }
 
 
@@ -297,13 +422,27 @@ color: #FFFFFF;
 }
 
 
+
 .txt_2 {
     padding: 0 0 40px;
-    font-size: 70px;
+    font-size: 35px;
+}
+
+
+.txt_3 {
+    font-size: 55px;
+}
+
+.spp {
+    font-size: 24px;
+}
+
+.spp2 {
+    font-size: 15px;
 }
 
 
 .txt_4 {
-    font-size: 28px;
+    font-size: 20px;
 }
 }
